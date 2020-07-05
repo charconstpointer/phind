@@ -26,7 +26,6 @@ func GetCoords(start [2]float32) Response {
 
 //GetPath is
 func getPath(tripData TripRequest) Response {
-	fmt.Println("getPath")
 	const api = "https://api.openrouteservice.org/v2/directions/foot-walking/geojson"
 	const token = "5b3ce3597851110001cf6248479488b571734c25b1df9564a229ddb5"
 	b, err := json.Marshal(tripData)
